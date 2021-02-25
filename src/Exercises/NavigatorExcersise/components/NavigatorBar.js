@@ -16,7 +16,7 @@ function NavigatorBar() {
             <Link to="/faq">F.A.Q</Link>
           </li>
           <li className="nav-item">
-            <Link to="/store">Atore</Link>
+            <Link to="/store">Store</Link>
           </li>
           <li className="nav-item">
             <Link to="/app">App</Link>

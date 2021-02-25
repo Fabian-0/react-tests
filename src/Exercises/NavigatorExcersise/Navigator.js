@@ -5,6 +5,7 @@ import About from "./components/About";
 import FAQ from "./components/FAQ";
 import Home from "./components/Home";
 import Store from "./components/Store";
+import RootLink from "./components/RootLink";
 import NavigatorBar from './components/NavigatorBar';
 
 function NavigatorApp() {
@@ -17,7 +18,13 @@ function NavigatorApp() {
         <Route path="/faq" component={ FAQ } />
         <Route path="/store" component={ Store } />
         <Route path="/app" component={ App } />
-        <Route path="/" />
+        <Route exact path="/" />
+        <Route path="*" >
+          <>
+            <p>;v</p>
+            <RootLink />
+          </>  
+        </Route>
       </Switch>
     </Router>  
   );
