@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://academlo-chat.herokuapp.com/socket.io/socket.io.js"></script>
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -16,5 +17,9 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    
+    <script>
+      console.log(io("https://academlo-chat.herokuapp.com/"));
+    </script>
   </body>
 </html>
